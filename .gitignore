@@ -4,7 +4,7 @@
 # For security purpose
 .evn
 AtaotaBlog/settings.production.py
-AtaotaBlog/url.production.py
+AtaotaBlog/urls.production.py
 
 # Remove Database
 db.sqlite3
