@@ -1,0 +1,15 @@
+.idea/
+.vscode
+
+# For security purpose
+.evn
+AtaotaBlog/settings.production.py
+AtaotaBlog/url.production.py
+
+# Remove Database
+db.sqlite3
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.pyc
+*.py[co]

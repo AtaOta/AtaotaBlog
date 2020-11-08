@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ataota.club</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'CSS/Base/index.css' %} ">
+        <link rel="stylesheet" href="{% static 'CSS/Base/Header_Container.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS/Base/Base_Aside.css' %}">
+    </head>
+    <body>
+        <!-- :~~~~~~~~~~:~~~~~~~~~:[ HEADER CONTAINER ]:~~~~~~~~~~:~~~~~~~~~: -->
+        <header>
+            <div class="Base_Header_Container">
+                <div>
+                    <button class="button_stop_focus" id="Base_Show_Aside">
+                        <img src="{% static 'ICONS/BasicIcon/menu.svg' %}" alt="menu">
+                    </button>
+                </div>
+                <div class="Base_Logo">
+                    ataota.club
+                </div>
+            </div>
+        </header>
+
+        <!-- :~~~~~~~~~~:~~~~~~~~~:[ NAVIGATION CONTAINER ]:~~~~~~~~~~:~~~~~~~~~: -->
+
+        <nav id="Base_Nav">
+            <div class="Base_Nav_Container">
+                Nav
+            </div>
+
+        </nav>
+
+        <!-- :~~~~~~~~~~:~~~~~~~~~:[ ASIDE CONTAINER ]:~~~~~~~~~~:~~~~~~~~~: -->
+        <aside class="Base_AsideHide" id="Base_Aside">
+            <div class="Base_Aside_Container">
+                <button class="Base_Hide_Aside button_stop_focus" id="Base_Hide_Aside">
+                    <img src="{% static 'ICONS/BasicIcon/back.svg' %}" alt="back">
+                </button>
+
+
+                <ul>
+                    <li class="item" id="abc1">
+                        <a href="#abc1" class="Navbtn">
+                            <img src="">Computer Basic Tips &amp Sticks
+                        </a>
+                        <div class="sMenu">
+                            <a href="#" >Test</a>
+                            <a href="#" >Test</a>
+                            <a href="#" >Test</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!--  This is required to Hide Aside Bar and Adjust Aside Bar -->
+            <div class="Base_AsideHider_Container Base_Hide_Aside">
+            </div>
+
+        </aside>
+
+        <!-- :~~~~~~~~~~:~~~~~~~~~:[ SECTION CONTAINER ]:~~~~~~~~~~:~~~~~~~~~: -->
+        <section>
+            <div class="Base_Section_Container">
+                {% block section %}
+                {% endblock %}
+            </div>
+
+        </section>
+
+        <!-- :~~~~~~~~~~:~~~~~~~~~:[ FOOTER CONTAINER ]:~~~~~~~~~~:~~~~~~~~~: -->
+        <footer>
+            <div class="Base_Footer_Container">
+                Footer
+            </div>
+
+        </footer>
+
+
+        <script src="{% static 'JS/index.js' %}" async defer></script>
+    </body>
+</html>
+
